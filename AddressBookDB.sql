@@ -19,3 +19,5 @@ insert into Address_Book_Service values
 ('Sumit','Padole','Somalwada','Pune','Maharashtra',456123,'7798852590','sumitpadole@gmail.com'),
 ('Harsha','Rambhad','Buldi Zansi Rani Sq.','Mumbai','Maharashtra',400562,'8789645645','harshaa@yahoo.com');
 select * from Address_Book_Service
+
+update Address_Book_Service set state = 'Bihar' where Firstname = 'Sumit'
