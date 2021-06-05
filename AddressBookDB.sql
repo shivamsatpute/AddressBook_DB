@@ -3,13 +3,19 @@ select * from sys.databases;
 use Address_Book_Service 
 create table Address_Book_Service
 (
-Firstname varchar(15) not null,
-Lastname varchar(15) not null,
-address varchar(30) not null,
-city varchar(15) not null,
-state varchar(15) not null,
+Firstname varchar(50) not null,
+Lastname varchar(50) not null,
+address varchar(50) not null,
+city varchar(50) not null,
+state varchar(50) not null,
 zip int not null,
-phoneNumber varchar(12) not null,
-email varchar(20)	not null,
+phoneNumber varchar(50) not null,
+email varchar(50)	not null,
 );
 select * from Address_Book_Service 
+
+insert into Address_Book_Service values
+('Rahul','Gaidhane','Rana nagar','Nagpur','Maharashtra',440002,'8657563689','rahulgai@gmail.com'),
+('Sumit','Padole','Somalwada','Pune','Maharashtra',456123,'7798852590','sumitpadole@gmail.com'),
+('Harsha','Rambhad','Buldi Zansi Rani Sq.','Mumbai','Maharashtra',400562,'8789645645','harshaa@yahoo.com');
+select * from Address_Book_Service
