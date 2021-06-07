@@ -24,3 +24,6 @@ update Address_Book_Service set state = 'Bihar' where Firstname = 'Sumit'
 
 delete from Address_Book_Service where Firstname = 'Rahul'
 select * from Address_Book_Service
+
+select * from Address_Book_Service where city = 'pune'
+select * from Address_Book_Service where state = 'Maharashtra'
